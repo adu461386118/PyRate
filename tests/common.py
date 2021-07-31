@@ -200,7 +200,7 @@ def assert_tifs_equal(tif1, tif2):
     d1 = mds.ReadAsArray()
     d2 = sds.ReadAsArray()
     # phase equal
-    np.testing.assert_array_almost_equal(d1,  d2, decimal=3)
+    np.testing.assert_array_almost_equal(d1,  d2, decimal=2)
 
     mds = None  # close datasets
     sds = None
